@@ -27,6 +27,11 @@ h1 .th:after{content:'';position:absolute;left:0;right:0;bottom:.04em;border-bot
 .sub{max-width:54ch;color:var(--mut);margin-top:1.6rem;font-size:.95rem}
 .sub b{color:var(--ink)}
 .cta{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.8rem}
+.hero-flex{display:grid;grid-template-columns:1.12fr .88fr;gap:clamp(1.4rem,3.5vw,3.4rem);align-items:center}
+.hero-fig{position:relative;margin:0;background:#fff;border:2px solid var(--ink);padding:10px;box-shadow:14px 14px 0 var(--thread);transform:rotate(1.6deg)}
+.hero-fig img{width:100%;display:block;aspect-ratio:4/3.4;object-fit:cover}
+.hero-fig figcaption{font-family:'PT Mono',monospace;font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);padding-top:8px}
+@media(max-width:960px){.hero-flex{grid-template-columns:1fr}.hero-fig{transform:rotate(-1.2deg);max-width:520px}}
 .hero-note{margin-top:2rem;font-family:'PT Mono',monospace;font-size:.68rem;color:var(--mut);letter-spacing:.08em}
 /* шов-разделитель */
 .stitch{height:0;border-top:3px dashed var(--ink);opacity:.25;margin:0}
@@ -99,11 +104,16 @@ footer a{color:#fff}
 <section class="hero" id="hero">
 <div class="warp" id="warp" aria-hidden="true"></div>
 <div class="wrap hero-in">
+<div class="hero-flex">
+<div class="hero-txt">
 <p class="kick">Фабрика специальной одежды · Санкт-Петербург · с 2004</p>
-<h1><span class="w1"><span>Одеваем тех,</span></span><span class="w2"><span>кто <span class="st">работает</span></span></span><span class="w2" style="margin-top:.35em"><span class="th">руками</span></span></h1>
+<h1><span class="w1"><span>Пошив</span></span><span class="w2"><span>спецодежды</span></span><span class="w2" style="margin-top:.35em"><span class="th">в Санкт-Петербурге</span></span></h1>
 <p class="sub">Профессиональная одежда под требования вашего предприятия: <b>от пониженных температур до агрессивных сред</b> — для промышленности, медицины, гостиниц, охраны и кафе. Все модели — по ГОСТу.</p>
 <div class="cta"><a class="btn" href="#catalog">Каталог отраслей</a><a class="btn-o" href="mailto:office@prof-image.ru">office@prof-image.ru</a></div>
 <p class="hero-note">// проведите рукой по ткани — полосы тянутся за курсором</p>
+</div>
+<figure class="hero-fig" data-in><img src="https://media.base44.com/images/public/6aa8d872c1bdf2ed579176f2/bc45401f3_generated_image.png" alt="Производственный цех фабрики «Проф Имидж»: пошив спецодежды" loading="eager"><figcaption>цех фабрики · Санкт-Петербург</figcaption></figure>
+</div>
 </div>
 </section>
 <div class="stitch wrap" style="width:100%"></div>
