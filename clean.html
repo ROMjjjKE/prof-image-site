@@ -1,0 +1,238 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Фабрика спецодежды «Проф Имидж» — Санкт-Петербург · корпоративная, медицинская и рабочая одежда</title><meta name="description" content="Фабрика специальной одежды «Проф Имидж»: пошив на заказ рабочей, корпоративной и медицинской одежды. Ткани Carrington и Concordia, утеплитель Тинсулейт, ГОСТ. Магазин опт/розница: СПб, Сабировская 50. Тел: (812) 430-41-72, 942-88-55"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;800&family=PT+Mono&display=swap" rel="stylesheet"><style>
+:root{--chalk:#F5F6F8;--card:#FFFFFF;--indigo:#1E2A52;--indigo-soft:#E7EAF3;--thread:#E85D2F;--thread-soft:#FBE7DC;--mut:#6C7285;--line:#DDE0E8}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:'Golos Text',sans-serif;background:var(--chalk);color:var(--indigo);line-height:1.65;overflow-x:hidden}a{color:inherit;text-decoration:none}img{display:block;max-width:100%}button{font:inherit;cursor:pointer}::selection{background:var(--thread);color:#fff}
+.mono{font-family:'PT Mono',monospace}
+.wrap{width:min(1120px,100% - 44px);margin:auto}
+.head{position:fixed;inset:0 0 auto;z-index:100;background:rgba(245,246,248,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}.head .row{height:64px;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.logo{display:flex;align-items:center;gap:.6rem;font-weight:800;font-size:1.02rem}
+.logo i{width:34px;height:34px;border-radius:9px;background:var(--indigo);color:#fff;display:grid;place-items:center;font-style:normal;font-size:.8rem;letter-spacing:.04em}
+.logo small{display:block;font-size:.53rem;letter-spacing:.16em;text-transform:uppercase;color:var(--mut);font-weight:500}
+.menu{display:flex;gap:1.3rem;font-size:.78rem;font-weight:500;color:var(--mut)}.menu a:hover{color:var(--thread)}
+.btn{display:inline-block;background:var(--indigo);color:#fff;font-weight:600;font-size:.86rem;padding:.72rem 1.3rem;border-radius:.55rem;transition:.2s}.btn:hover{background:var(--thread)}
+.btn-o{display:inline-block;border:1.5px solid var(--line);background:var(--card);color:var(--indigo);font-weight:600;font-size:.86rem;padding:.72rem 1.3rem;border-radius:.55rem;transition:.2s}.btn-o:hover{border-color:var(--thread);color:var(--thread)}
+/* красная нить */
+.thread{position:fixed;left:26px;top:0;bottom:0;width:2px;background:var(--indigo-soft);z-index:50;display:none}
+.thread .fill{position:absolute;top:0;left:0;width:100%;height:0;background:var(--thread)}
+.thread .needle{position:absolute;left:-7px;top:0;width:16px;height:16px;border:2px solid var(--thread);border-radius:50%;background:var(--chalk);transition:none}
+@media(min-width:1240px){.thread{display:block}.wrap{width:min(1080px,100% - 60px);margin-left:max(24px,calc(50% - 520px + 26px))}}
+/* HERO */
+.hero{padding:150px 0 0}
+.kicker{font-family:'PT Mono',monospace;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--thread)}
+h1{font-weight:800;font-size:clamp(2.2rem,6vw,4.6rem);line-height:1.05;letter-spacing:-.02em;margin-top:1.2rem;max-width:20ch}
+h1 em{font-style:normal;color:var(--thread);position:relative;white-space:nowrap}
+h1 em:after{content:'';position:absolute;left:0;right:0;bottom:.06em;border-bottom:3px dashed var(--thread)}
+.hero-sub{display:flex;gap:2.4rem;flex-wrap:wrap;margin-top:2rem;align-items:flex-start}
+.hero-sub .col{max-width:44ch;color:var(--mut);font-size:.92rem}
+.hero-sub b{display:block;color:var(--indigo);font-weight:800;font-size:.82rem;margin-bottom:.35rem}
+.hero-cta{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1.8rem}
+/* рулетка-лента */
+.tape{margin-top:3.2rem;overflow:hidden;border-block:2px solid var(--indigo);background:var(--indigo);padding:.75rem 0}
+.tape-in{display:flex;gap:0;width:max-content;animation:roll 30s linear infinite}
+.tape-in span{color:#fff;font-family:'PT Mono',monospace;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;padding:0 1.1rem;border-right:1px solid rgba(255,255,255,.35);white-space:nowrap}
+@keyframes roll{to{transform:translateX(-50%)}}
+/* СЕКЦИИ */
+.section{padding:78px 0}
+.shead{display:flex;align-items:baseline;gap:1.4rem;flex-wrap:wrap;margin-bottom:2.2rem}
+.shead .k{font-family:'PT Mono',monospace;font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--thread);white-space:nowrap}
+.shead h2{font-weight:800;font-size:clamp(1.6rem,3.6vw,2.4rem);letter-spacing:-.015em;line-height:1.12}
+.shead .rule{flex:1;border-top:1px dashed var(--line);min-width:60px}
+/* о компании */
+.about{display:grid;grid-template-columns:1.05fr .95fr;gap:2.8rem;align-items:center}
+.about img{border-radius:1.1rem;box-shadow:0 30px 60px -30px rgba(30,42,82,.4)}
+.about ul{list-style:none;margin-top:1.4rem}
+.about li{padding:.75rem 0 .75rem 1.9rem;border-top:1px solid var(--line);position:relative;font-size:.92rem}
+.about li:before{content:'';position:absolute;left:.3rem;top:1.15rem;width:.75rem;height:.75rem;border-radius:50%;border:2.5px solid var(--thread)}
+/* услуги */
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.svc{background:var(--card);border:1px solid var(--line);border-radius:1rem;padding:1.5rem;transition:.25s}
+.svc:hover{border-color:var(--thread);transform:translateY(-3px)}
+.svc .n{font-family:'PT Mono',monospace;font-size:.68rem;color:var(--thread)}
+.svc b{display:block;font-size:1.1rem;font-weight:800;margin-top:.7rem}
+.svc p{color:var(--mut);font-size:.85rem;margin-top:.45rem}
+/* каталог */
+.catalog{display:grid;grid-template-columns:.9fr 1.1fr;gap:2.4rem;align-items:start}
+.cat-list{display:flex;flex-direction:column}
+.cat-row{display:flex;align-items:center;gap:.9rem;padding:.95rem .8rem;background:none;border:0;border-left:3px solid transparent;text-align:left;transition:.2s;border-radius:0 .5rem .5rem 0}
+.cat-row:hover{background:var(--indigo-soft)}
+.cat-row.on{border-left-color:var(--thread);background:var(--indigo-soft)}
+.cat-row .cn{font-family:'PT Mono',monospace;font-size:.62rem;color:var(--mut);width:2.2rem}
+.cat-row b{font-weight:600;font-size:.95rem}
+.cat-detail{background:var(--indigo);color:#fff;border-radius:1.1rem;padding:2.2rem;position:sticky;top:90px}
+.cat-detail .dn{font-family:'PT Mono',monospace;font-size:.66rem;color:#9FA9C9;letter-spacing:.18em;text-transform:uppercase}
+.cat-detail h3{font-size:clamp(1.3rem,2.6vw,1.8rem);font-weight:800;margin-top:.7rem;line-height:1.15}
+.cat-detail p{color:#C6CDE2;font-size:.92rem;margin-top:.9rem}
+.cat-detail .fab{display:inline-block;margin-top:1.2rem;font-family:'PT Mono',monospace;font-size:.64rem;color:#fff;border:1px solid rgba(255,255,255,.3);border-radius:.45rem;padding:.35rem .7rem}
+/* ткани */
+.fabric{display:grid;grid-template-columns:1fr 1fr;gap:2.8rem;align-items:center}
+.fabric img{border-radius:1.1rem;box-shadow:0 30px 60px -30px rgba(30,42,82,.4)}
+.fabric .fr{display:flex;gap:1rem;align-items:baseline;border-top:1px solid var(--line);padding:1rem .2rem}
+.fabric .fr b{font-weight:800;min-width:9.5rem;font-size:.95rem}
+.fabric .fr span{color:var(--mut);font-size:.85rem}
+/* клиенты */
+.clients{display:flex;flex-wrap:wrap;gap:.7rem}
+.cl{border:1.5px solid var(--line);background:var(--card);border-radius:.7rem;padding:.65rem 1.2rem;font-weight:600;font-size:.86rem;color:var(--indigo);transition:.2s}
+.cl:hover{border-color:var(--thread)}
+/* преимущества */
+.adv{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+.adv>div{background:var(--card);border:1px solid var(--line);border-radius:1rem;padding:1.5rem;display:flex;gap:1.1rem}
+.adv .an{font-weight:800;font-size:1.5rem;color:var(--thread);line-height:1}
+.adv b{display:block;font-size:1rem}
+.adv p{color:var(--mut);font-size:.85rem;margin-top:.3rem}
+/* магазин */
+.shop{background:var(--indigo);color:#fff;border-radius:1.2rem;padding:2.6rem;display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:center}
+.shop h2{font-weight:800;font-size:clamp(1.4rem,3vw,2rem)}
+.shop p{color:#C6CDE2;margin-top:.6rem;font-size:.92rem;max-width:52ch}
+.shop .addr{font-family:'PT Mono',monospace;font-size:.78rem;border:1px solid rgba(255,255,255,.3);border-radius:.7rem;padding:1rem 1.2rem;white-space:nowrap}
+/* контакты */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:2.6rem;align-items:center}
+.tel-big{display:inline-block;font-weight:800;font-size:clamp(1.4rem,3.6vw,2.2rem);color:var(--thread);margin-top:.7rem}
+footer{background:var(--indigo);color:#9FA9C9;padding:1.3rem 0;font-size:.74rem}
+footer .row{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+footer a{color:#fff}
+/* водяной знак */
+.wm{position:fixed;right:14px;bottom:14px;z-index:200;background:rgba(30,42,82,.92);color:#fff;font-family:'PT Mono',monospace;font-size:.62rem;padding:.38rem .7rem;border-radius:999px;letter-spacing:.05em}
+.wm b{color:var(--thread);font-weight:400}
+[data-in]{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}.visible[data-in]{opacity:1;transform:none}
+@media(max-width:900px){.menu{display:none}.about,.catalog,.fabric,.contact-grid,.adv{grid-template-columns:1fr}.services{grid-template-columns:1fr}.cat-detail{position:static}.shop{grid-template-columns:1fr}.shop .addr{white-space:normal}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}.tape-in{animation:none}}
+</style></head><body><header class="head"><div class="wrap row"><a class="logo" href="#top" aria-label="Проф Имидж"><i>ПИ</i><span>Проф Имидж<small>фабрика спецодежды · СПб</small></span></a><nav class="menu"><a href="#about">О компании</a><a href="#services">Услуги</a><a href="#catalog">Каталог</a><a href="#fabric">Ткани</a><a href="#clients">Клиенты</a><a href="#contact">Контакты</a></nav><a class="btn" href="tel:+78124304172">(812) 430-41-72</a></div></header><div class="thread" aria-hidden="true"><div class="fill" id="threadFill"></div><div class="needle" id="threadNeedle"></div></div><main id="top">
+<section class="hero"><div class="wrap">
+<p class="kicker">Фабрика специальной одежды · Санкт-Петербург · с 2004 года</p>
+<h1>Одеваем команды, которые <em>работают руками</em></h1>
+<div class="hero-sub">
+<div class="col"><b>Что шьём</b>Профессиональную одежду различного назначения: защиту от пониженных температур, производственных загрязнений и агрессивных сред, от загрязнений нефтепродуктами, одежду для пищевой промышленности, персонала гостиниц, санаториев и больниц.</div>
+<div class="col"><b>Почему нам доверяют</b>Все модели соответствуют требованиям ГОСТа. «Проф Имидж» — член Ассоциации безопасности экономики и бизнеса «Северо-Запад». Шьём по вашим требованиям: особенности под задачу вашей отрасли.</div>
+</div>
+<div class="hero-cta"><a class="btn" href="#catalog">Каталог одежды</a><a class="btn-o" href="mailto:office@prof-image.ru">office@prof-image.ru</a></div>
+</div>
+<div class="tape" aria-hidden="true"><div class="tape-in">
+<span>Корпоративная одежда</span><span>Медицинская одежда</span><span>Рабочая одежда</span><span>Охранные структуры</span><span>Офисные сотрудники</span><span>Кафе и рестораны</span><span>Магазины</span><span>Спортивная одежда</span><span>Трикотаж</span><span>СИЗы</span>
+<span>Корпоративная одежда</span><span>Медицинская одежда</span><span>Рабочая одежда</span><span>Охранные структуры</span><span>Офисные сотрудники</span><span>Кафе и рестораны</span><span>Магазины</span><span>Спортивная одежда</span><span>Трикотаж</span><span>СИЗы</span>
+</div></div>
+</section>
+<section class="section" id="about"><div class="wrap about">
+<div data-in>
+<div class="shead" style="margin-bottom:1.2rem"><span class="k">01 · О компании</span><h2>Фабрика, а не посредник</h2></div>
+<p style="color:var(--mut);max-width:52ch">«Проф Имидж» — фабрика специальной одежды в Санкт-Петербурге. С 2004 года производим профессиональную одежду: от типовых моделей до пошива на заказ под требования конкретного предприятия.</p>
+<ul>
+<li>Собственное производство — контроль от кроя до финальной примерки</li>
+<li>Все модели соответствуют требованиям ГОСТа</li>
+<li>Член Ассоциации безопасности экономики и бизнеса «Северо-Запад»</li>
+</ul>
+</div>
+<img src="https://media.base44.com/images/public/6aa8d872c1bdf2ed579176f2/bc45401f3_generated_image.png" alt="Производственный цех: пошив спецодежды, визуализация" data-in>
+</div></section>
+<section class="section" style="background:var(--card);border-block:1px solid var(--line)" id="services"><div class="wrap">
+<div class="shead" data-in><span class="k">02 · Услуги</span><h2>Что мы делаем</h2><span class="rule"></span></div>
+<div class="services" data-in>
+<div class="svc"><span class="n">/01</span><b>Пошив на заказ</b><p>Рабочая одежда под требования вашего предприятия: особенности кроя, ткани, утеплитель — под задачу.</p></div>
+<div class="svc"><span class="n">/02</span><b>Корпоративная одежда</b><p>Единый имидж для всей команды: от охраны и офиса до производственного персонала.</p></div>
+<div class="svc"><span class="n">/03</span><b>Опт и розница</b><p>Фирменный магазин открыт: крупные партии для предприятий и розница для частных клиентов.</p></div>
+</div>
+</div></section>
+<section class="section" id="catalog"><div class="wrap">
+<div class="shead" data-in><span class="k">03 · Каталог</span><h2>Выберите свою отрасль</h2><span class="rule"></span></div>
+<div class="catalog" data-in>
+<div class="cat-list" id="catList"></div>
+<div class="cat-detail" id="catDetail">
+<span class="dn" id="cdN">Категория 01</span>
+<h3 id="cdT">Корпоративная одежда</h3>
+<p id="cdD">Единый стиль для всей команды: костюмы, поло, брюки и жилеты в фирменных цветах. Шьём под дресс-код и задачи предприятия.</p>
+<span class="fab" id="cdF">ткани: Смесовые, Carrington, Concordia</span>
+</div>
+</div>
+</div></section>
+<section class="section" style="background:var(--card);border-block:1px solid var(--line)" id="fabric"><div class="wrap">
+<div class="shead" data-in><span class="k">04 · Ткани и технологии</span><h2>Из чего шьём</h2><span class="rule"></span></div>
+<div class="fabric">
+<img src="https://media.base44.com/images/public/6aa8d872c1bdf2ed579176f2/74cd13e12_generated_image.png" alt="Рулон ткани для спецодежды, визуализация" data-in>
+<div data-in>
+<p style="color:var(--mut);max-width:52ch">Используем российские ткани, а также английские и бельгийские материалы фирм Carrington и Concordia. Для изготовления тканей применяется только высококачественное сырьё и красители.</p>
+<div class="fr"><b>Carrington</b><span>английские ткани повышенной прочности и стойкости к загрязнениям</span></div>
+<div class="fr"><b>Concordia</b><span>бельгийские ткани для профессиональной и корпоративной одежды</span></div>
+<div class="fr"><b>Тинсулейт</b><span>утеплитель различной плотности для защиты от пониженных температур</span></div>
+<div class="fr"><b>ГОСТ</b><span>все модели каталога соответствуют требованиям стандартов</span></div>
+</div>
+</div>
+</div></section>
+<section class="section" id="clients"><div class="wrap">
+<div class="shead" data-in><span class="k">05 · Наши клиенты</span><h2>Кому уже шьём</h2><span class="rule"></span></div>
+<div class="clients" data-in>
+<span class="cl">Газпром</span><span class="cl">Роснефть</span><span class="cl">ТНТ Экспресс</span><span class="cl">Группа «Виктория»</span><span class="cl">РосКар</span><span class="cl">САНВ</span><span class="cl">ВОЗР</span><span class="cl">Ассоциация «Северо-Запад»</span>
+</div>
+</div></section>
+<section class="section" style="background:var(--card);border-block:1px solid var(--line)"><div class="wrap">
+<div class="shead" data-in><span class="k">06 · Наши преимущества</span><h2>Почему выбирают нас</h2><span class="rule"></span></div>
+<div class="adv" data-in>
+<div><span class="an">01</span><div><b>Собственное производство</b><p>Полный цикл в Санкт-Петербурге: от подбора ткани до готового изделия.</p></div></div>
+<div><span class="an">02</span><div><b>ГОСТ по умолчанию</b><p>Каждая модель каталога соответствует требованиям стандартов.</p></div></div>
+<div><span class="an">03</span><div><b>Ткани проверенных фабрик</b><p>Россия, Англия (Carrington) и Бельгия (Concordia), утеплитель Тинсулейт.</p></div></div>
+<div><span class="an">04</span><div><b>Под ваши требования</b><p>Особенности кроя и защиты — под конкретные задачи вашей отрасли.</p></div></div>
+</div>
+</div></section>
+<section class="section"><div class="wrap"><div class="shop" data-in>
+<div>
+<h2>Открылся фирменный магазин «Проф Имидж»</h2>
+<p>Оптовые и розничные продажи готовой спецодежды. Приезжайте примерить или заберите партию для предприятия.</p>
+<div style="margin-top:1.2rem"><a class="btn" style="background:var(--thread)" href="#contact">Как добраться</a></div>
+</div>
+<div class="addr">СПб, ул. Сабировская, д. 50<br>опт · розница</div>
+</div></div></section>
+<section class="section" id="contact" style="padding-top:0"><div class="wrap contact-grid">
+<div data-in><span class="k" style="font-family:'PT Mono',monospace;font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--thread)">07 · Контакты</span>
+<h2 style="font-weight:800;font-size:clamp(1.5rem,3vw,2.1rem);margin-top:.5rem">Позвоните — обсудим ваш заказ</h2>
+<a class="tel-big" href="tel:+78124304172">(812) 430-41-72</a><br>
+<a class="tel-big" style="font-size:clamp(1.1rem,2.6vw,1.6rem)" href="tel:+78129428855">(812) 942-88-55</a>
+<p class="mono" style="color:var(--mut);font-size:.74rem;margin-top:.8rem">т/ф: (812) 430-18-97 · office@prof-image.ru</p>
+</div>
+<div class="cat-detail" style="background:var(--card);color:var(--indigo)" data-in>
+<span class="dn" style="color:var(--mut)">Адрес фабрики и магазина</span>
+<h3 style="color:var(--indigo)">197183, Санкт-Петербург,<br>ул. Сабировская, д. 50</h3>
+<p style="color:var(--mut)">ООО «Проф Имидж» · фабрика специальной одежды с 2004 года.</p>
+<p class="mono" style="font-size:.72rem;color:var(--thread)">office@prof-image.ru</p>
+</div>
+</div></section>
+</main><footer><div class="wrap row"><span>© ООО «Проф Имидж» · фабрика специальной одежды</span><span>Санкт-Петербург, Сабировская, 50 · сайт: <a href="https://sitefast.by">SiteFast.by</a></span></div></footer>
+<div class="wm" aria-label="Сайт сделан на SiteFast.by">*** <b>SiteFast.by</b></div>
+<script>
+(function(){
+/* красная нить по скроллу */
+var fill=document.getElementById('threadFill'),needle=document.getElementById('threadNeedle'),ticking=false;
+function thread(){var h=document.documentElement;var p=h.scrollTop/(h.scrollHeight-h.clientHeight||1);
+ fill.style.height=(p*100)+'%';needle.style.top='calc('+(p*100)+'% - 8px)';ticking=false}
+window.addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(thread)}},{passive:true});
+thread();
+/* каталог */
+var cats=[
+['Корпоративная одежда','Единый стиль для всей команды: костюмы, поло, брюки и жилеты в фирменных цветах. Шьём под дресс-код и задачи предприятия.','ткани: смесовые, Carrington, Concordia'],
+['Медицинская одежда','Костюмы и халаты для врачей, медсестёр и персонала больниц и санаториев. Стойкие к обработке ткани и удобный крой для смены.','ткани: смесовые с пропиткой, ГОСТ'],
+['Рабочая одежда','Защита от общих производственных загрязнений, пониженных температур и агрессивных сред. Костюмы, полукомбинезоны, утеплённые комплекты.','утеплитель: Тинсулейт'],
+['Для охранных структур','Строгая форма для служб безопасности и ЧОП: прочные ткани, фирменные нашивки, погодная защита.','ткани: смесовые, плотный рипстоп'],
+['Для офисных сотрудников','Деловой корпоративный стиль: рубашки, поло, брюки и жилет — комфорт на весь рабочий день.','ткани: хлопок, смесовые'],
+['Для кафе и ресторанов','Одежда персонала кухни и зала: фартуки, кители, брюки. Стойкость к загрязнениям и частым стиркам.','ткани: Carrington, пропитанные'],
+['Для магазинов','Фирменная одежда продавцов и консультантов — опрятный вид команды на торговой точке.','ткани: смесовые, трикотаж'],
+['Спортивная одежда','Костюмы и форма для команд и активного отдыха.','ткани: футер, полиэфир'],
+['Трикотаж','Полуверы, водолазки, футболки — под корпоративный стиль предприятия.','ткани: хлопковый трикотаж'],
+['СИЗы','Средства индивидуальной защиты: сигнальные жилеты, костюмы повышенной видимости и защиты.','ткани: сигнальные, ГОСТ']
+];
+var list=document.getElementById('catList');
+cats.forEach(function(c,i){
+ var b=document.createElement('button');b.type='button';b.className='cat-row'+(i===0?' on':'');
+ b.innerHTML='<span class="cn">'+String(i+1).padStart(2,'0')+'</span><b>'+c[0]+'</b>';
+ b.addEventListener('click',function(){
+  document.querySelectorAll('.cat-row').forEach(function(x){x.classList.remove('on')});
+  b.classList.add('on');
+  document.getElementById('cdN').textContent='Категория '+String(i+1).padStart(2,'0');
+  document.getElementById('cdT').textContent=c[0];
+  document.getElementById('cdD').textContent=c[1];
+  document.getElementById('cdF').textContent=c[2];
+ });
+ list.appendChild(b);
+});
+/* reveal */
+if('IntersectionObserver'in window){
+ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}})},{threshold:.1});
+ document.querySelectorAll('[data-in]').forEach(function(el){io.observe(el)});
+}else{document.querySelectorAll('[data-in]').forEach(function(el){el.classList.add('visible')})}
+})();
+</script></body></html>
